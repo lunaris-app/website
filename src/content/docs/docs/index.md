@@ -7,8 +7,8 @@ Lunaris is a desktop reader for manga, manhwa, manhua and light novels, for macO
 Windows and Linux.
 
 1. [Install Lunaris](/docs/install/) for your system.
-2. [Add a source](/docs/sources/): open **Extensions**, add a repo URL under
-   **Available**, and install the sites you read.
+2. [Add a source](/docs/sources/): open **Extensions**, and under **Available** install
+   the sites you read from the [Lunaris extensions](https://github.com/lunaris-app/extensions) repo.
 3. Find a title in **Browse** and add it to your library.
 
 ## Around the app
