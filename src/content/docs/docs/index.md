@@ -20,7 +20,8 @@ Windows and Linux.
 - **History**: what you read, grouped by day.
 - **Browse**: search the extensions you've installed.
 - **Downloads**: chapters saved for offline reading.
-- **Settings**: themes, reading mode, page fit, novel typography and keyboard shortcuts.
+- **Settings**: themes, reading mode, page fit, novel typography, keyboard shortcuts,
+  and [backup and restore](/docs/backup/).
 
 Lunaris doesn't host or include any content. Titles come from extensions you install,
 which read from third-party sites.

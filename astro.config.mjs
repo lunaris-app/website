@@ -15,7 +15,7 @@ export default defineConfig({
       sidebar: [
         {
           label: "Using Lunaris",
-          items: ["docs", "docs/install", "docs/sources"],
+          items: ["docs", "docs/install", "docs/sources", "docs/backup"],
         },
         {
           label: "Extensions",
