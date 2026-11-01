@@ -13,7 +13,7 @@ Windows and Linux.
 
 ## Around the app
 
-- **Library**: your titles, split into Manga & Comics and Light Novels, with
+- **Library**: your titles, split into Comics and Light Novels, with
   categories such as Reading, Plan to read and Completed.
 - **Updates**: new chapters for titles in your library. Lunaris can check in the
   background and queue new chapters for download.

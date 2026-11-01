@@ -39,7 +39,11 @@ show in Extensions.
 ## Sites that check you're human
 
 Some sites show a "verify you're human" check. Lunaris solves what it can in a hidden
-window, and opens it for you when the site needs you. The passes you earn are kept;
-**Settings > Sites > Clear site data** removes them.
+window, and opens it for you when the site needs you. If a page says a source needs
+verification, click **Verify** to finish the check, and the page loads again. The passes
+you earn are kept; **Settings > Sites > Clear site data** removes them.
+
+Lunaris sends each site only a few requests at a time, and waits when a site says it's
+getting too many.
 
 Want to add a site? See [Writing an extension](/docs/writing-extensions/).

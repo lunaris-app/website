@@ -3,7 +3,8 @@ title: Backup and restore
 description: Save a copy of your library and bring it back, on this computer or another.
 ---
 
-A backup is one file with your titles, chapters, read progress, history and settings.
+A backup is one file with your titles, chapters, read progress, history, categories and
+settings.
 Use it to move your library to another computer, or to keep a copy in case something
 goes wrong.
 
@@ -27,7 +28,6 @@ from a newer version can't be restored until you update the app.
 
 ## What isn't in a backup
 
-- **Categories**: they aren't in backups yet, so set them up again after a restore.
 - **Downloaded chapters**: these are files in your downloads folder, not part of the
   library. Copy that folder yourself if you want them on another computer. A restored
   backup uses the downloads folder from its own settings, so check
