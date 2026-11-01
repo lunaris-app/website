@@ -1,0 +1,31 @@
+/* "Moonlit ink", the app's palette (lunaris/src/style.css), mapped onto Starlight's tokens. */
+@import "@fontsource-variable/geist";
+:root {
+  --sl-color-accent-low: #3a3320;
+  --sl-color-accent: #e9c964;
+  --sl-color-accent-high: #f4e3b0;
+  --sl-color-white: #e6e8ef;
+  --sl-color-gray-1: #d2d5df;
+  --sl-color-gray-2: #b0b5c4;
+  --sl-color-gray-3: #8a91a6;
+  --sl-color-gray-4: #5a6177;
+  --sl-color-gray-5: #2a3044;
+  --sl-color-gray-6: #1a1e2c;
+  --sl-color-black: #131622;
+  --sl-font: "Geist Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+:root[data-theme="light"] {
+  --sl-color-accent-low: #f3e6bf;
+  --sl-color-accent: #8a6510;
+  --sl-color-accent-high: #4d3808;
+  --sl-color-white: #1a1e2b;
+  --sl-color-gray-1: #2a2f3d;
+  --sl-color-gray-2: #3d4352;
+  --sl-color-gray-3: #626a7d;
+  --sl-color-gray-4: #8f96a6;
+  --sl-color-gray-5: #d5dae3;
+  --sl-color-gray-6: #e4e8ee;
+  --sl-color-gray-7: #eef0f4;
+  --sl-color-black: #f8f9fb;
+}
