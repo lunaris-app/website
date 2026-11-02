@@ -24,6 +24,14 @@ its index if the key changes. Remove the repo and add it again only if you trust
 
 You can also install a single script with **Import script**.
 
+## Extension settings
+
+Some extensions have options, such as the language to read in. Click the gear button next
+to an installed extension in **Extensions** to change them.
+
+Some extensions also show a short note under their name, for example that the site's terms
+don't allow reading it through an app.
+
 ## Updates
 
 Turn on **Update extensions** in **Settings > Updates** to install newer versions from
@@ -40,8 +48,10 @@ show in Extensions.
 
 Some sites show a "verify you're human" check. Lunaris solves what it can in a hidden
 window, and opens it for you when the site needs you. If a page says a source needs
-verification, click **Verify** to finish the check, and the page loads again. The passes
-you earn are kept; **Settings > Sites > Clear site data** removes them.
+verification, click **Verify** to finish the check, and the page loads again. You can also
+click the globe button next to an installed extension in **Extensions** to open its site
+and pass or refresh the check yourself; close the window when you're done. The passes you
+earn are kept; **Settings > Sites > Clear site data** removes them.
 
 Lunaris sends each site only a few requests at a time, and waits when a site says it's
 getting too many.
