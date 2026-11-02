@@ -6,5 +6,7 @@
     "directory": "./dist",
     // Serve Starlight's 404.html for unknown paths
     "not_found_handling": "404-page"
-  }
+  },
+  // Required by `wrangler preview`; assets stay configured at the top level
+  "previews": {}
 }
