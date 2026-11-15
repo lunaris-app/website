@@ -34,9 +34,27 @@ don't allow reading it through an app.
 
 ## Updates
 
-Turn on **Update extensions** in **Settings > Updates** to install newer versions from
-the default repo and your repos when Lunaris checks for new chapters.
+**Available** marks extensions with a newer version and has an **Update all** button;
+the refresh button fetches the repos again. Turn on **Update extensions** in
+**Settings > Updates** to install updates when Lunaris checks for new chapters.
 Lunaris checks each script's checksum and version against its repo before installing it.
+
+An extension only updates from the repo you installed it from, so another repo listing
+the same extension can't replace it. To switch, click **Install from this repo** next to
+it in the other repo's list. A script you added with **Import script** is never updated.
+
+## Uninstall
+
+Uninstalling an extension first lists the titles in your library that read from it, so you
+can move them to another source before they stop updating.
+
+## Move a title to another source
+
+When a site stops working or you'd rather read elsewhere, open a title in your library
+and click **Move to another source**. Lunaris searches your other sources, shows how many
+of your read chapters match on the one you pick, then moves the title: read chapters and
+progress carry over by chapter number, and it keeps its place in your library, category
+and history. Downloaded chapters can come along or be deleted.
 
 ## Adult content
 
