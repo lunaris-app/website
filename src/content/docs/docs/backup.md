@@ -46,8 +46,10 @@ from a newer version can't be restored until you update the app.
 Export saves downloaded chapters as files other readers can open:
 
 - **Comics** become one CBZ file per chapter, in a folder named after the title. The files
-  are numbered (`001 Chapter 1.cbz`) so they sort in reading order.
-- **Light novels** become one EPUB per title, with every downloaded chapter in order.
+  are numbered (`001 Chapter 1.cbz`) so they sort in reading order, and each carries a
+  `ComicInfo.xml` with the series, chapter and author for comic readers that use it.
+- **Light novels** become one EPUB per title, with every downloaded chapter in order and
+  the title's cover.
 
 To export one title, open it and click **Export**. To export every title in your library,
 click **Export** next to **Export library** in **Settings > Backup and export**. Then choose
