@@ -72,6 +72,13 @@ extension({
 | `details(url)`        | a title's `url` from `search`       | optional; see below                                 |
 | `text(url)`           | a chapter's `url` from `chapters`   | novels only: the chapter as HTML                    |
 
+Chapters may also carry `date`, when the chapter was published, as an ISO 8601 string such as
+`"2026-11-05"` or `"2026-11-05T14:30:00Z"`; Lunaris shows no date for anything else.
+
+If a source lists a chapter once per scanlation group, give each chapter a `scanlator`: the
+group's name. When a title has more than one group, the user can hide groups from its chapter
+list, and reading skips their chapters. Leave it out when the source doesn't say.
+
 Search results may also carry `kind` and `author`. `details(url)` is optional: Lunaris
 calls it when a title is first opened and when the user refreshes it, never during
 background update checks. It returns any of `description` (plain text, paragraphs split by
@@ -120,13 +127,18 @@ destructuring, `?.`, `??`, `JSON`, `RegExp`, …):
 
   With `verify: true`, the page may need the user: a "verify you're human" box, or a site
   that hands out a token only after one. If the page or the script hasn't finished after
-  10 seconds, Lunaris shows the window, titled "Verify to continue: <site>", until `render`
-  returns; closing it cancels. Waiting for the page then gets up to two minutes, but the
+  10 seconds, Lunaris shows the window, titled "Verify <site> for the <id> extension", until
+  `render` returns; closing it cancels. Waiting for the page then gets up to two minutes, but the
   whole call still stops at one minute. Have the script wait without a timeout of its own
   while the user acts.
 
 There is no DOM (`document`, `window`), no `require` or `import`, no file system and no
-timers. Sites whose content is built by their own JavaScript usually have a JSON API behind
+timers. `fetch` and `render` reach only the public internet: requests to `localhost`,
+`*.local` and private or link-local addresses (`192.168.x.x`, `10.x.x.x`,
+`169.254.x.x`, …) fail, and so do loads from them inside a rendered page. The render window
+keeps its own cookies, apart from the app's other windows such as tracker sign-ins.
+
+Sites whose content is built by their own JavaScript usually have a JSON API behind
 it: open the browser's network tab, find that request, and `JSON.parse(fetch(api).text)`.
 Reach for `render` only when there's no such API.
 
@@ -160,8 +172,10 @@ uses the defaults.
 
 ## Rules
 
-- **One call at a time.** Lunaris runs one function of your extension at a time, and each
-  call is stopped after one minute.
+- **Calls don't share variables.** Lunaris runs up to four calls of your extension at once,
+  each in its own copy of the script, so browsing isn't held up by an update check. A
+  top-level variable set in one call may be missing in the next; keep what a call needs
+  inside it. Each call is stopped after one minute.
 - **Throw on failure.** `throw new Error("…")` with a short reason. Lunaris shows the
   message. Don't return made-up data.
 - **Be gentle.** Make as few requests as a function needs. Don't loop through every page
